@@ -1,0 +1,48 @@
+@import "libs/normalize.css";
+@import "_vars.css";
+@import "_fonts.css";
+@import "blocks.css";
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        padding: 0 40px;
+    }
+}
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1320px;
+    }
+    .menu__btn {
+        margin-right: 90px;
+    }
+}
