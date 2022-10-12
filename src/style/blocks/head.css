@@ -175,4 +175,14 @@
         background-color: transparent;
         border: 1px solid var(--white);
     }
+    .top-slider__button-next, .top-slider__button-prev {
+        width: 70px;
+        height: 70px;
+    }
+    .top-slider__button-next {
+        bottom: calc(50% - 70px);
+    }
+    .top-slider__button-prev {
+        top: calc(50% - 70px);
+    }
 }
