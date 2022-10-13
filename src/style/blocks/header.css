@@ -63,3 +63,8 @@
         margin-left: 0;
     }
 }
+@media (min-width: 1440px) {
+    .menu__btn {
+        margin-right: 90px;
+    }
+}
