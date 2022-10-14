@@ -1,0 +1,121 @@
+.projects {
+    padding: 20px 0 40px;
+    background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%);
+}
+.projects__title {
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 40px;
+}
+.projects__title:after {
+    background-color: var(--white);
+}
+.projects__list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+.projects__item {
+    grid-column: 4 span;
+}
+.projects__item-img {
+    position: relative;
+    min-height: 250px;
+}
+.projects__item-img img {
+    display: block;
+    max-height: 460px;
+    margin: 0 auto;
+    border-right: 4px;
+    object-fit: cover;
+}
+.projects__item-link {
+    display: block;
+    padding: 20px 0;
+
+    font-family: 'Roboto Condensed Bold', 'sans-serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--accent);
+}
+.projects__item:hover .projects__item-btns {
+    opacity: 0.83;
+    border-radius: 4px;
+    visibility: visible;
+}
+.projects__item-btns {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    background: var(--bg-color);
+    opacity: 0;
+    transition: opacity .3s ease-in-out,visibility .3s ease-in-out;
+}
+.projects__btn {
+    background-color: transparent;
+}
+.projects__btn svg {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.projects__btn:first-child {
+    margin-right: 10px;
+}
+
+@media (min-width: 640px) {
+    .projects__title {
+        font-size: 48px;
+    }
+    .projects__title:after {
+        width: 100px;
+    }
+    .projects__item-link {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .projects__btn svg {
+        width: 54px;
+        height: 54px;
+    }
+}
+@media (min-width: 768px) {
+    .projects {
+        padding: 80px 0 80px;
+    }
+    .projects__list {
+        grid-template-columns: repeat(8,1fr);
+        gap: 25px;
+    }
+    .projects__btn svg {
+        width: 33px;
+        height: 33px;
+    }
+}
+@media (min-width: 1024px) {
+    .projects__list {
+        margin: 0 auto;
+        max-width: 662px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1440px) {
+    .projects__list {
+        max-width: 100%;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .projects__item {
+        grid-column: span 3;
+    }
+}

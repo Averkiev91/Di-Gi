@@ -54,6 +54,9 @@
     background-color: transparent;
     border: 1px solid #476E4D;
 }
+.top-slider__button-prev img, .top-slider__button-next img{
+    width: auto;
+}
 
 @media (min-width: 320px) {
     .top-slider__button-next, .top-slider__button-prev {
@@ -109,6 +112,9 @@
     .top-slider__button-prev {
         top: calc(50% - 56px);
         background-color: var(--accent);
+    }
+    .swiper-button-disabled {
+        opacity: 0.3;
     }
 }
 @media (min-width: 768px) {
