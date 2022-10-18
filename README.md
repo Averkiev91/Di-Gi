@@ -1,6 +1,6 @@
-# webpack-starter
+# Портфолио Di-Gi
 
-## Запустите свой проект с Webpack.
+http://n92604gi.beget.tech/Di-Gi/
 
 *Для установки пакетов используйте команду `npm install`*
 
