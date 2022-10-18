@@ -7,26 +7,28 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
- const swiper = new Swiper('.top-slider', {
-     modules: [Navigation, Pagination],
-     pagination: {
-         el: '.swiper-pagination',
-         clickable: true
-     },
-     navigation: {
-         nextEl: '.top-slider__button-next',
-         prevEl: '.top-slider__button-prev',
-     }
- });
+document.addEventListener("DOMContentLoaded", () => {
+    const swiper = new Swiper('.top-slider', {
+        modules: [Navigation, Pagination],
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.top-slider__button-next',
+            prevEl: '.top-slider__button-prev',
+        }
+    })
 
- const achieve = new Swiper('.achieve__slider', {
-     modules: [Pagination, Autoplay],
-     pagination: {
-         el: ".swiper-pagination",
-         type: 'bullets',
-         clickable: true
-     },
-     autoplay: {
-         delay: 3000,
-     }
- })
+    const achieve = new Swiper('.achieve__slider', {
+        modules: [Pagination, Autoplay],
+        pagination: {
+            el: ".swiper-pagination",
+            type: 'bullets',
+            clickable: true
+        },
+        autoplay: {
+            delay: 3000,
+        }
+    })
+})

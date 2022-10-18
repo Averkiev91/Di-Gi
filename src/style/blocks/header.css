@@ -54,6 +54,15 @@
     .logo__link {
         margin-left: 14px;
     }
+    .menu__btn {
+        width: 60px;
+        height: 60px;
+    }
+    .menu__btn:after, .menu__btn:before, .menu__btn-line {
+        width: 32px;
+        height: 4px;
+        border-radius: 4px;
+    }
     .header__inner {
         min-height: 100px;
     }
