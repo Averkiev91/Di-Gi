@@ -31,4 +31,13 @@ document.addEventListener("DOMContentLoaded", () => {
             delay: 3000,
         }
     })
+
+    const hb = document.querySelector('.menu__btn');
+    const menu = document.querySelector('.header');
+    const body = document.querySelector('body');
+
+    hb.addEventListener('click', function() {
+        menu.classList.toggle('active');
+        body.classList.toggle('lock');
+    })
 })
